@@ -39,4 +39,4 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   Restriction_Angle: 10
-  AngleForce: 1
+  AngleForce: 0.5

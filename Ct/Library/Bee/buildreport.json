@@ -1,0 +1,20 @@
+{
+"instructions_readme": "1) Open Chrome, 2) go to chrome://tracing, 3) click Load, 4) navigate to this file.",
+
+"traceEvents":[
+{ "pid": "Unity", "ph":"M", "name": "process_name", "args": {"name": "Unity"} },
+{ "pid": "Unity", "ph":"M", "name": "process_sort_index", "args": {"sort_index": -100} },
+{ "pid": "Unity", "tid": 1, "ph":"M", "name": "thread_name", "args": {"name": ""} },
+{ "pid": "Unity", "tid": 1,"ts": 1.71886893301896E+15,"dur": 1529963, "ph":"X", "name": "Build player"},
+{ "pid": "Unity", "tid": 1,"ts": 1.71886893302501E+15,"dur": 6781, "ph":"X", "name": "Preprocess Player"},
+{ "pid": "Unity", "tid": 1,"ts": 1.71886893305121E+15,"dur": 1454358, "ph":"X", "name": "Prepare For Build"},
+{}
+
+],
+"meta_datetime": "06/20/2024 16:35:34",
+"meta_command_line": "\"C:\\Program Files\\Unity\\Hub\\Editor\\2021.3.38f1\\Editor\\Unity.exe\" -projectpath C:\\Users\\tenetus\\Desktop\\Gain\\Car\\Ct -useHub -hubIPC -cloudEnvironment production -licensingIpc LicenseClient-tenetus -hubSessionId 6176a54f-c033-494c-8d93-d1d56999f9a1 -accessToken NOk-W4DKR9TQ1LQqPFYxgTjitPgumTLQAKHYibMn3l400df",
+"meta_command_line_args": "C:\\Program Files\\Unity\\Hub\\Editor\\2021.3.38f1\\Editor\\Unity.exe -projectpath C:\\Users\\tenetus\\Desktop\\Gain\\Car\\Ct -useHub -hubIPC -cloudEnvironment production -licensingIpc LicenseClient-tenetus -hubSessionId 6176a54f-c033-494c-8d93-d1d56999f9a1 -accessToken NOk-W4DKR9TQ1LQqPFYxgTjitPgumTLQAKHYibMn3l400df",
+"meta_user_name": "tenetus",
+"meta_os_version": "Microsoft Windows NT 10.0.22631.0",
+"meta_cpu_count": "20"
+}
