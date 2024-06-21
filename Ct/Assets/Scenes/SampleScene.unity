@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 8082144}
   - component: {fileID: 8082143}
   - component: {fileID: 8082142}
+  - component: {fileID: 8082145}
   m_Layer: 0
   m_Name: Cube (12)
   m_TagString: Untagged
@@ -220,6 +221,244 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8082140}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &8082145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8082140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &52379711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 52379712}
+  - component: {fileID: 52379714}
+  - component: {fileID: 52379713}
+  m_Layer: 5
+  m_Name: Timer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &52379712
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52379711}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 974096837}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 918}
+  m_SizeDelta: {x: 1000, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &52379713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52379711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 100
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 115
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: New Text
+--- !u!222 &52379714
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52379711}
+  m_CullTransparentMesh: 1
+--- !u!1 &89298450
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 89298455}
+  - component: {fileID: 89298454}
+  - component: {fileID: 89298453}
+  - component: {fileID: 89298452}
+  - component: {fileID: 89298451}
+  m_Layer: 0
+  m_Name: End
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &89298451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89298450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 852050871}
+        m_TargetAssemblyTypeName: LapTimer, Assembly-CSharp
+        m_MethodName: LapFinish
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!65 &89298452
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89298450}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &89298453
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89298450}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7d120c4c0b3071f42ac3730bef0ad8d5, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &89298454
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89298450}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &89298455
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89298450}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 39.85, y: 1, z: 27.55}
+  m_LocalScale: {x: 0.5, y: 1, z: 5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &108086414
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,6 +471,7 @@ GameObject:
   - component: {fileID: 108086418}
   - component: {fileID: 108086417}
   - component: {fileID: 108086416}
+  - component: {fileID: 108086419}
   m_Layer: 0
   m_Name: Cube (5)
   m_TagString: Untagged
@@ -317,6 +557,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 108086414}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &108086419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108086414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &118973615
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,6 +599,7 @@ GameObject:
   - component: {fileID: 118973619}
   - component: {fileID: 118973618}
   - component: {fileID: 118973617}
+  - component: {fileID: 118973620}
   m_Layer: 0
   m_Name: Cube (21)
   m_TagString: Untagged
@@ -414,6 +685,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 118973615}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &118973620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118973615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &124258782
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,6 +727,7 @@ GameObject:
   - component: {fileID: 124258786}
   - component: {fileID: 124258785}
   - component: {fileID: 124258784}
+  - component: {fileID: 124258787}
   m_Layer: 0
   m_Name: Cube (13)
   m_TagString: Untagged
@@ -511,6 +813,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 124258782}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &124258787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124258782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &160348854
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,6 +931,7 @@ GameObject:
   - component: {fileID: 215539628}
   - component: {fileID: 215539627}
   - component: {fileID: 215539626}
+  - component: {fileID: 215539629}
   m_Layer: 0
   m_Name: Cube (30)
   m_TagString: Untagged
@@ -684,6 +1017,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 215539624}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &215539629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215539624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &259585545
 GameObject:
   m_ObjectHideFlags: 0
@@ -696,6 +1059,7 @@ GameObject:
   - component: {fileID: 259585549}
   - component: {fileID: 259585548}
   - component: {fileID: 259585547}
+  - component: {fileID: 259585550}
   m_Layer: 0
   m_Name: Cube (25)
   m_TagString: Untagged
@@ -781,6 +1145,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 259585545}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &259585550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259585545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &343498123
 GameObject:
   m_ObjectHideFlags: 0
@@ -793,6 +1187,7 @@ GameObject:
   - component: {fileID: 343498127}
   - component: {fileID: 343498126}
   - component: {fileID: 343498125}
+  - component: {fileID: 343498128}
   m_Layer: 0
   m_Name: Cube (9)
   m_TagString: Untagged
@@ -878,6 +1273,164 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 343498123}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &343498128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343498123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &387395808
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 387395813}
+  - component: {fileID: 387395812}
+  - component: {fileID: 387395811}
+  - component: {fileID: 387395810}
+  - component: {fileID: 387395809}
+  m_Layer: 0
+  m_Name: Start
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &387395809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387395808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 852050871}
+        m_TargetAssemblyTypeName: LapTimer, Assembly-CSharp
+        m_MethodName: LapStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!65 &387395810
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387395808}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &387395811
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387395808}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 7d120c4c0b3071f42ac3730bef0ad8d5, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &387395812
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387395808}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &387395813
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387395808}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 30.05, y: 1, z: -0.31}
+  m_LocalScale: {x: 0.2, y: 1, z: 8}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &542901776
 GameObject:
   m_ObjectHideFlags: 0
@@ -887,7 +1440,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 542901777}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CamTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -921,6 +1474,7 @@ GameObject:
   - component: {fileID: 556454860}
   - component: {fileID: 556454859}
   - component: {fileID: 556454858}
+  - component: {fileID: 556454861}
   m_Layer: 0
   m_Name: Cube (28)
   m_TagString: Untagged
@@ -1006,6 +1560,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 556454856}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &556454861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556454856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &556739386
 GameObject:
   m_ObjectHideFlags: 0
@@ -1018,6 +1602,7 @@ GameObject:
   - component: {fileID: 556739390}
   - component: {fileID: 556739389}
   - component: {fileID: 556739388}
+  - component: {fileID: 556739391}
   m_Layer: 0
   m_Name: Cube (19)
   m_TagString: Untagged
@@ -1103,6 +1688,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 556739386}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &556739391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556739386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &563045064
 GameObject:
   m_ObjectHideFlags: 0
@@ -1115,6 +1730,7 @@ GameObject:
   - component: {fileID: 563045068}
   - component: {fileID: 563045067}
   - component: {fileID: 563045066}
+  - component: {fileID: 563045069}
   m_Layer: 0
   m_Name: Cube (20)
   m_TagString: Untagged
@@ -1200,6 +1816,240 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 563045064}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &563045069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563045064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &597982782
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 597982783}
+  - component: {fileID: 597982786}
+  - component: {fileID: 597982785}
+  - component: {fileID: 597982784}
+  - component: {fileID: 597982787}
+  m_Layer: 0
+  m_Name: Cube (33)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &597982783
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597982782}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 39.74, y: 1, z: 14.13}
+  m_LocalScale: {x: 1, y: 1, z: 22}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1261024434}
+  m_RootOrder: 33
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &597982784
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597982782}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &597982785
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597982782}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: b0e7756c2e80f814da8839fb52df64de, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &597982786
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597982782}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &597982787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597982782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &604011896
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 604011897}
+  - component: {fileID: 604011899}
+  - component: {fileID: 604011898}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &604011897
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604011896}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1890505839}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 50}
+  m_SizeDelta: {x: 10, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &604011898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604011896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &604011899
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604011896}
+  m_CullTransparentMesh: 1
 --- !u!1 &633516036
 GameObject:
   m_ObjectHideFlags: 0
@@ -1212,6 +2062,7 @@ GameObject:
   - component: {fileID: 633516040}
   - component: {fileID: 633516039}
   - component: {fileID: 633516038}
+  - component: {fileID: 633516041}
   m_Layer: 0
   m_Name: Cube (27)
   m_TagString: Untagged
@@ -1297,6 +2148,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 633516036}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &633516041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633516036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &651729341
 GameObject:
   m_ObjectHideFlags: 0
@@ -1440,6 +2321,7 @@ GameObject:
   - component: {fileID: 760585532}
   - component: {fileID: 760585531}
   - component: {fileID: 760585530}
+  - component: {fileID: 760585533}
   m_Layer: 0
   m_Name: Cube (11)
   m_TagString: Untagged
@@ -1525,6 +2407,224 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 760585528}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &760585533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760585528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &852050868
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 852050870}
+  - component: {fileID: 852050869}
+  - component: {fileID: 852050871}
+  m_Layer: 0
+  m_Name: UIScript
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &852050869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852050868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d57ec7ee7ff873549953b0798ac3c9ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carInfo: {fileID: 1065696498}
+  Needle: {fileID: 1890505839}
+--- !u!4 &852050870
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852050868}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 720, y: 2688, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &852050871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852050868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e18e36424600a4a4cafc2d3511d5ed8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Text: {fileID: 52379713}
+--- !u!1 &939622934
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 939622935}
+  - component: {fileID: 939622938}
+  - component: {fileID: 939622937}
+  - component: {fileID: 939622936}
+  - component: {fileID: 939622939}
+  m_Layer: 0
+  m_Name: Cube (32)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &939622935
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939622934}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 24.74, y: 1, z: 3.26}
+  m_LocalScale: {x: 30, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1261024434}
+  m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &939622936
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939622934}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &939622937
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939622934}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: b0e7756c2e80f814da8839fb52df64de, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &939622938
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939622934}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &939622939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939622934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &943168354
 GameObject:
   m_ObjectHideFlags: 0
@@ -1537,6 +2637,7 @@ GameObject:
   - component: {fileID: 943168358}
   - component: {fileID: 943168357}
   - component: {fileID: 943168356}
+  - component: {fileID: 943168359}
   m_Layer: 0
   m_Name: Cube (31)
   m_TagString: Untagged
@@ -1622,6 +2723,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 943168354}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &943168359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943168354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &948066666
 GameObject:
   m_ObjectHideFlags: 0
@@ -1634,6 +2765,7 @@ GameObject:
   - component: {fileID: 948066670}
   - component: {fileID: 948066669}
   - component: {fileID: 948066668}
+  - component: {fileID: 948066671}
   m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -1719,6 +2851,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 948066666}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &948066671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948066666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &950588286
 GameObject:
   m_ObjectHideFlags: 0
@@ -1731,6 +2893,7 @@ GameObject:
   - component: {fileID: 950588290}
   - component: {fileID: 950588289}
   - component: {fileID: 950588288}
+  - component: {fileID: 950588291}
   m_Layer: 0
   m_Name: Cube (14)
   m_TagString: Untagged
@@ -1816,6 +2979,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 950588286}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &950588291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950588286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1894,8 +3087,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
-  m_LocalPosition: {x: 6.3, y: 13.846413, z: -10.58038}
+  m_LocalRotation: {x: 0.18301275, y: -0.6830127, z: 0.18301275, w: 0.6830127}
+  m_LocalPosition: {x: 46.45038, y: 13.846413, z: -0.54999864}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2069,6 +3262,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2105168009}
+  - {fileID: 2029297934}
+  - {fileID: 52379712}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2157,6 +3352,7 @@ GameObject:
   - component: {fileID: 1042441275}
   - component: {fileID: 1042441274}
   - component: {fileID: 1042441273}
+  - component: {fileID: 1042441276}
   m_Layer: 0
   m_Name: Cube (15)
   m_TagString: Untagged
@@ -2242,6 +3438,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1042441271}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1042441276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042441271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1065696496
 GameObject:
   m_ObjectHideFlags: 0
@@ -2253,7 +3479,7 @@ GameObject:
   - component: {fileID: 1065696497}
   - component: {fileID: 1065696499}
   - component: {fileID: 1065696498}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: My
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2267,8 +3493,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1065696496}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.3, y: 5, z: -1.29}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 37.16, y: 5, z: -0.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2276,7 +3502,7 @@ Transform:
   - {fileID: 542901777}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!114 &1065696498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2289,7 +3515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c80fcfdcb1be3234097a1fed97aa1b0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxSpeed: 10
+  MaxSpeed: 30
   MaxSpeedTime: 3
   VeloCity:
     serializedVersion: 2
@@ -2427,6 +3653,7 @@ GameObject:
   - component: {fileID: 1207232571}
   - component: {fileID: 1207232570}
   - component: {fileID: 1207232569}
+  - component: {fileID: 1207232572}
   m_Layer: 0
   m_Name: Cube (29)
   m_TagString: Untagged
@@ -2512,6 +3739,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1207232567}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1207232572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207232567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1221135678
 GameObject:
   m_ObjectHideFlags: 0
@@ -2524,6 +3781,7 @@ GameObject:
   - component: {fileID: 1221135682}
   - component: {fileID: 1221135681}
   - component: {fileID: 1221135680}
+  - component: {fileID: 1221135683}
   m_Layer: 0
   m_Name: Cube (23)
   m_TagString: Untagged
@@ -2609,6 +3867,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1221135678}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1221135683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221135678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1261024433
 GameObject:
   m_ObjectHideFlags: 0
@@ -2669,6 +3957,8 @@ Transform:
   - {fileID: 1207232568}
   - {fileID: 215539625}
   - {fileID: 943168355}
+  - {fileID: 939622935}
+  - {fileID: 597982783}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2684,7 +3974,7 @@ GameObject:
   - component: {fileID: 1310088973}
   - component: {fileID: 1310088972}
   - component: {fileID: 1310088971}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2781,6 +4071,7 @@ GameObject:
   - component: {fileID: 1322127470}
   - component: {fileID: 1322127469}
   - component: {fileID: 1322127468}
+  - component: {fileID: 1322127471}
   m_Layer: 0
   m_Name: Cube (8)
   m_TagString: Untagged
@@ -2866,6 +4157,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1322127466}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1322127471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322127466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1326910458
 GameObject:
   m_ObjectHideFlags: 0
@@ -2878,6 +4199,7 @@ GameObject:
   - component: {fileID: 1326910462}
   - component: {fileID: 1326910461}
   - component: {fileID: 1326910460}
+  - component: {fileID: 1326910463}
   m_Layer: 0
   m_Name: Cube (22)
   m_TagString: Untagged
@@ -2963,6 +4285,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1326910458}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1326910463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326910458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1332996310
 GameObject:
   m_ObjectHideFlags: 0
@@ -2975,6 +4327,7 @@ GameObject:
   - component: {fileID: 1332996314}
   - component: {fileID: 1332996313}
   - component: {fileID: 1332996312}
+  - component: {fileID: 1332996315}
   m_Layer: 0
   m_Name: Cube (7)
   m_TagString: Untagged
@@ -3060,6 +4413,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1332996310}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1332996315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332996310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1394120911
 GameObject:
   m_ObjectHideFlags: 0
@@ -3072,6 +4455,7 @@ GameObject:
   - component: {fileID: 1394120915}
   - component: {fileID: 1394120914}
   - component: {fileID: 1394120913}
+  - component: {fileID: 1394120916}
   m_Layer: 0
   m_Name: Cube (10)
   m_TagString: Untagged
@@ -3157,6 +4541,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1394120911}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1394120916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394120911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1443933246
 GameObject:
   m_ObjectHideFlags: 0
@@ -3169,6 +4583,7 @@ GameObject:
   - component: {fileID: 1443933250}
   - component: {fileID: 1443933249}
   - component: {fileID: 1443933248}
+  - component: {fileID: 1443933251}
   m_Layer: 0
   m_Name: Cube (18)
   m_TagString: Untagged
@@ -3254,6 +4669,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1443933246}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1443933251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443933246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1488637719
 GameObject:
   m_ObjectHideFlags: 0
@@ -3266,6 +4711,7 @@ GameObject:
   - component: {fileID: 1488637723}
   - component: {fileID: 1488637722}
   - component: {fileID: 1488637721}
+  - component: {fileID: 1488637724}
   m_Layer: 0
   m_Name: Cube (6)
   m_TagString: Untagged
@@ -3351,6 +4797,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1488637719}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1488637724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488637719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1526717658
 GameObject:
   m_ObjectHideFlags: 0
@@ -3552,6 +5028,7 @@ GameObject:
   - component: {fileID: 1663802011}
   - component: {fileID: 1663802010}
   - component: {fileID: 1663802009}
+  - component: {fileID: 1663802012}
   m_Layer: 0
   m_Name: Cube (17)
   m_TagString: Untagged
@@ -3637,6 +5114,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1663802007}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1663802012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663802007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1714129800
 GameObject:
   m_ObjectHideFlags: 0
@@ -3649,6 +5156,7 @@ GameObject:
   - component: {fileID: 1714129804}
   - component: {fileID: 1714129803}
   - component: {fileID: 1714129802}
+  - component: {fileID: 1714129805}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -3734,6 +5242,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1714129800}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1714129805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714129800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1759982580
 GameObject:
   m_ObjectHideFlags: 0
@@ -3746,6 +5284,7 @@ GameObject:
   - component: {fileID: 1759982584}
   - component: {fileID: 1759982583}
   - component: {fileID: 1759982582}
+  - component: {fileID: 1759982585}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -3761,8 +5300,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1759982580}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.08, y: 1, z: 3.31}
-  m_LocalScale: {x: 1, y: 1, z: 15}
+  m_LocalPosition: {x: 10.08, y: 1, z: 6.74}
+  m_LocalScale: {x: 1, y: 1, z: 8}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1261024434}
@@ -3831,6 +5370,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1759982580}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1759982585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759982580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1777192736
 GameObject:
   m_ObjectHideFlags: 0
@@ -3843,6 +5412,7 @@ GameObject:
   - component: {fileID: 1777192740}
   - component: {fileID: 1777192739}
   - component: {fileID: 1777192738}
+  - component: {fileID: 1777192741}
   m_Layer: 0
   m_Name: Cube (16)
   m_TagString: Untagged
@@ -3928,6 +5498,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1777192736}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1777192741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777192736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1785915127
 GameObject:
   m_ObjectHideFlags: 0
@@ -3940,6 +5540,7 @@ GameObject:
   - component: {fileID: 1785915131}
   - component: {fileID: 1785915130}
   - component: {fileID: 1785915129}
+  - component: {fileID: 1785915132}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -4025,6 +5626,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1785915127}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1785915132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785915127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1865223819
 GameObject:
   m_ObjectHideFlags: 0
@@ -4037,6 +5668,7 @@ GameObject:
   - component: {fileID: 1865223823}
   - component: {fileID: 1865223822}
   - component: {fileID: 1865223821}
+  - component: {fileID: 1865223824}
   m_Layer: 0
   m_Name: Cube (26)
   m_TagString: Untagged
@@ -4122,6 +5754,73 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1865223819}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1865223824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865223819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &1890505838
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1890505839}
+  m_Layer: 5
+  m_Name: Case
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1890505839
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890505838}
+  m_LocalRotation: {x: 0, y: 0, z: 0.9659258, w: 0.2588191}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 604011897}
+  m_Father: {fileID: 2029297934}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 150}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2025574589
 GameObject:
   m_ObjectHideFlags: 0
@@ -4134,6 +5833,7 @@ GameObject:
   - component: {fileID: 2025574593}
   - component: {fileID: 2025574592}
   - component: {fileID: 2025574591}
+  - component: {fileID: 2025574594}
   m_Layer: 0
   m_Name: Cube (24)
   m_TagString: Untagged
@@ -4219,6 +5919,113 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2025574589}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2025574594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025574589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &2029297933
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2029297934}
+  - component: {fileID: 2029297936}
+  - component: {fileID: 2029297935}
+  m_Layer: 5
+  m_Name: Velocity
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2029297934
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029297933}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1890505839}
+  m_Father: {fileID: 974096837}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -400}
+  m_SizeDelta: {x: 200, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2029297935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029297933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2029297936
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029297933}
+  m_CullTransparentMesh: 1
 --- !u!1 &2084909605
 GameObject:
   m_ObjectHideFlags: 0
@@ -4231,6 +6038,7 @@ GameObject:
   - component: {fileID: 2084909608}
   - component: {fileID: 2084909607}
   - component: {fileID: 2084909606}
+  - component: {fileID: 2084909610}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -4316,6 +6124,36 @@ Transform:
   m_Father: {fileID: 1261024434}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2084909610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084909605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64906027d7b700e47985e5947b28dbad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnterOB:
+    serializedVersion: 2
+    m_Bits: 64
+  EnterTriger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1065696498}
+        m_TargetAssemblyTypeName: CarMoving, Assembly-CSharp
+        m_MethodName: CrashWall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2105168008
 GameObject:
   m_ObjectHideFlags: 0

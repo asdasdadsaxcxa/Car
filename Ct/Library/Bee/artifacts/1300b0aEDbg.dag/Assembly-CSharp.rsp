@@ -347,10 +347,13 @@
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aEDbg.dag/UnityEngine.UI.ref.dll"
+"Assets/Script/BoxTriger.cs"
 "Assets/Script/CarControll.cs"
 "Assets/Script/CarInfo.cs"
 "Assets/Script/CarMoving.cs"
 "Assets/Script/CarSetScriptOb.cs"
+"Assets/Script/LapTimer.cs"
+"Assets/Script/SpeedoMeter.cs"
 -langversion:9.0
 /deterministic
 /optimize-

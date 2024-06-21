@@ -10,7 +10,13 @@ public class CarMoving : CarInfo
     float AngleSpeed = 0;
     bool Touching = false;
     float SliderValue = 0;
+    float OutSideValue = 0;
 
+    public override void Init()
+    {
+        base.Init();
+        AppAngle = CharacterController.transform.eulerAngles.y;
+    }
 
     private void LateUpdate()
     {
@@ -36,11 +42,12 @@ public class CarMoving : CarInfo
             {
                 AngleSpeed = 0;
             }
-            float TargetSpeed = MaxSpeed - AngleSpeed;
-
+            float TargetSpeed = MaxSpeed - AngleSpeed - OutSideValue;
+            TargetSpeed = Mathf.Max(TargetSpeed, 0);
             //Speed
             if (TargetSpeed - AppSpeed > 0.1f)
             {
+                Debug.Log(VeloTime);
                 AppSpeed = (MaxSpeed * VeloCity.Evaluate(VeloTime / MaxSpeedTime));
                 VeloTime += Time.deltaTime;
             }
@@ -58,7 +65,6 @@ public class CarMoving : CarInfo
             VeloTime = 0;
             AngleSpeed = 0;
         }
-
         //Debug.Log("Appspeed : " + AppSpeed + "\r\nAppSpeed - AngleSpeed : " + (AppSpeed - AngleSpeed).ToString());
         //Move
         Vector3 TargetMove = (Quaternion.Euler(0, AppAngle, 0) * new Vector3(0, 0, (AppSpeed) * 0.001f)) + new Vector3(0, -2, 0);
@@ -73,5 +79,10 @@ public class CarMoving : CarInfo
     public void TrigetEvent(bool on)
     {
         Touching = on;
+    }
+
+    public void CrashWall()
+    {
+        OutSideValue = 2;
     }
 }

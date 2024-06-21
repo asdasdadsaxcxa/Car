@@ -32,8 +32,15 @@ public class CarInfo : MonoBehaviour
     
     void Awake()
     {
+        Init();
+        //VeloCityInverseSet();
+    }
+
+    public virtual void Init()
+    {
         VeloCityInverseSet();
     }
+
     void VeloCityInverseSet()
     {
         VeloCityInverse = new AnimationCurve();

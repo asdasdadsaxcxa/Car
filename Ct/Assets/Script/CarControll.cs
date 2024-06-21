@@ -10,8 +10,9 @@ public class CarControll : CarMoving
 
     [Header("Controll")]
     [SerializeField] Slider ControllSlider;
-    void Start()
+    public override void Init()
     {
+        base.Init();
         ControllSlider.value = 0;
         ControllSlider.onValueChanged.AddListener(SliderMoving);
         EventSet();
