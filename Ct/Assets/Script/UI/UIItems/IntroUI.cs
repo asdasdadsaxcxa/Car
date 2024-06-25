@@ -1,10 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class IntroUI : UIItem
 {
-    // Start is called before the first frame update
     void Start()
     {
         
@@ -16,18 +16,30 @@ public class IntroUI : UIItem
         
     }
 
-    public override void Init(GameObject pa)
+    public override void Init()
     {
-        
+        VisControll = false;
     }
 
-    public override void Show(GameObject pa)
+    public override void Show()
     {
+        base.Show();
         PlayIntro();
+        StartCoroutine(Wait(2 , Hide));
     }
-
+    public override void Hide()
+    {
+        base.Hide();
+    }
     public void PlayIntro()
     {
         Debug.Log("PlayIntro");
+
+    }
+
+    IEnumerator Wait(float time , Action action)
+    {
+        yield return new WaitForSeconds(time);
+        action.Invoke();
     }
 }

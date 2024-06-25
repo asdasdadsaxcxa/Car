@@ -374,6 +374,7 @@
 "Assets/Script/UI/UIAdmin.cs"
 "Assets/Script/UI/UIItem.cs"
 "Assets/Script/UI/UIItems/IntroUI.cs"
+"Assets/Script/UI/UIItems/MainUI.cs"
 -langversion:9.0
 /deterministic
 /optimize-
