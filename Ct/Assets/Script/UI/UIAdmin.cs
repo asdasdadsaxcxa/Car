@@ -54,6 +54,11 @@ public class UIAdmin : MonoBehaviour
                 Intro.Init();
                 Intro.Show();
             }
+            else if (item.TryGetComponent<MainUI>(out MainUI Main))
+            {
+                Main.Init();
+                Main.Show();
+            }
         }
     }
 
