@@ -47,7 +47,7 @@ public class CarMoving : CarInfo
             //Speed
             if (TargetSpeed - AppSpeed > 0.1f)
             {
-                Debug.Log(VeloTime);
+                //Debug.Log(VeloTime);
                 AppSpeed = (MaxSpeed * VeloCity.Evaluate(VeloTime / MaxSpeedTime));
                 VeloTime += Time.deltaTime;
             }
