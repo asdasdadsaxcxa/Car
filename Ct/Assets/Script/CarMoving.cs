@@ -18,7 +18,7 @@ public class CarMoving : CarInfo
         AppAngle = CharacterController.transform.eulerAngles.y;
     }
 
-    private void LateUpdate()
+    private void Update()
     {
         CarMove();
     }

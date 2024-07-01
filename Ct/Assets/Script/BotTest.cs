@@ -17,6 +17,7 @@ public class BotTest : CarMoving
     [SerializeField] private Transform mTargetPos; //네브 타겟의 위치
     [SerializeField] private Transform mOriginTransform; //네브의 시작점 위치
 
+    [SerializeField] float BotRotSpeed = 90;
 
     NavMeshPath Path;
 
@@ -24,10 +25,10 @@ public class BotTest : CarMoving
     {
         Path = new NavMeshPath();
         transform.position = mOriginTransform.position;
-        InitNaviManager(mOriginTransform, mTargetPos, 0.1f);
+        InitNaviManager(mOriginTransform, mTargetPos, 0.03f);
     }
-    [SerializeField] GameObject TestBox_1;
-    [SerializeField] GameObject TestBox_2;
+    //[SerializeField] GameObject TestBox_1;
+    //[SerializeField] GameObject TestBox_2;
 
     private void OnDrawGizmos()
     {
@@ -48,43 +49,33 @@ public class BotTest : CarMoving
         //Debug.Log(GetAngle(TestBox_1.transform.position, TestBox_2.transform.position));
     }
 
-    private void FixedUpdate()
-    {
-        if (mNavAgent != null && Path.corners.Length > 2)
-        {
-            GetAngle();
-        }
-    }
-
-    //private void LateUpdate()
+    //private void FixedUpdate()
     //{
-    //    //float Target = GetAngle(transform.position, TestBox_2.transform.position) * -1;
-
-    //    //Target += (90);
-
-    //    //Debug.Log(transform.eulerAngles);
-
-    //    //transform.eulerAngles = new Vector3(0, Target, 0);
+    //    //if (mNavAgent != null && Path.corners.Length > 2)
+    //    //{
+    //    //    GetAngle();
+    //    //}
     //}
+
 
     void GetAngle()
     {
         TrigetEvent(true);
-        //float Target = GetAngle(transform.position, Path.corners[1]);
-        float Target = GetAngle(transform.position, TestBox_2.transform.position) * -1;
-        float angle = transform.rotation.eulerAngles.y;
+        //float Target = GetAngle(transform.position, TestBox_2.transform.position) * -1;
+        float Target = GetAngle(transform.position, Path.corners[1]) * -1;
+        float angle = transform.rotation.eulerAngles.y > 180 ? transform.rotation.eulerAngles.y - 360 : transform.rotation.eulerAngles.y;
         Target = angle - Target;
-        Target %= 360;
-        //Target = Target > 180 ? Target - 360 : Target;
+        //Target %= 360;
+        Target = Target < -180 ? Target + 360 : Target;
 
-        Debug.Log(Target);
+        //Debug.Log(Target * -1 / 90);
 
-        SliderValueSet(Target/180);
+        SliderValueSet(Target*-1/ BotRotSpeed);
     }
     float GetAngle(Vector3 from, Vector3 to)
     {
         Vector3 v = to - from;
-        float angle = (Mathf.Atan2(v.z, v.x) * Mathf.Rad2Deg) + 90;//z축을 0으로 하기위해
+        float angle = (Mathf.Atan2(v.z, v.x) * Mathf.Rad2Deg) - 90;//z축을 0으로 하기위해
         return angle;
     }
     #region Nav
@@ -121,6 +112,11 @@ public class BotTest : CarMoving
             //패스 그리기
             DrawPath();
 
+            //Bot 적용
+            if (mNavAgent != null && Path.corners.Length > 1)
+            {
+                GetAngle();
+            }
             yield return delay;
         }
     }
