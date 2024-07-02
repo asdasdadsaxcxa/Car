@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+//DTO 패턴
 public class CarInfo : MonoBehaviour
 {
     [Header("동작 설정")]

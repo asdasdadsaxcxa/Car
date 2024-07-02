@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//로직 부분
 public class CarMoving : CarInfo
 {
     float OldAngle = 0;
